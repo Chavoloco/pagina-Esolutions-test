@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js"></script>
+    <title>Ejercicio 8</title>
+  </head>
+  <body>
+    <section class="form-register">
+      <h4>Formulario Registro</h4>
+      <input
+        class="controls"
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="ingrese su nombre"
+      />
+      <input
+        class="controls"
+        type="text"
+        name="direccion"
+        id="direccion"
+        placeholder="ingrese su dirección"
+      />
+      <select
+        class="controls"
+        type="select"
+        name="sexo"
+        id="sexo"
+        placeholder="Ingrese su sexo"
+      >
+        <option disabled>Ingrese su sexo</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Otro">Prefiero no decirlo</option>
+      </select>
+      <input
+        class="controls"
+        type="date"
+        name="fechas"
+        id="fecha"
+        min="1940-01-01"
+        max="2016-01-01"
+      />
+      <input
+        class="controls"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="ingrese su Email"
+      />
+      <input
+        class="controls"
+        type="password"
+        name="contrasenia"
+        id="contrasenia"
+        placeholder="ingrese su contraseña"
+      />
+      <input class="button" onClick="store()" type="submit" value="Registrar" />
+      <p><a href="./form-login.html"> Ya tengo cuenta</a></p>
+    </section>
+  </body>
+</html>
